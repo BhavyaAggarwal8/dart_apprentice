@@ -1,1 +1,2 @@
-A simple command-line application.
+chapter 6 -classes
+  contains challenges and mini-exercises
