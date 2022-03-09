@@ -16,8 +16,8 @@ void nullExercise1() {
 /* Give profession a value of “basketball player”. */
 void nullExercise2() {
   String? profession;
-  profession = 'basketball player';
-  print(profession);
+  // profession = 'basketball player';
+  print(profession.toString());
 }
 
 /// Mini-exercise 3

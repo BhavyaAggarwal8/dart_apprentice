@@ -1,31 +1,23 @@
 import 'dart:math';
 
 void main() {
-  challenge1();
+  challenge1(21);
   challenge2();
   challenge3();
 }
 
 /* Challenge 1: Prime time
     Write a function that checks if a number is prime.*/
-
-void challenge1() {
-  bool isNumberDivisible(int number, int divisor) {
-    return number % divisor == 0;
+bool isPrime(int number) {
+  for (int i = 2; i <= sqrt(number); i++) {
+    if (number % i == 0) return false;
   }
+  return true;
+}
 
-  bool isPrime(int number) {
-    var isPrime = true;
-    for (var i = 2; i <= sqrt(number); i++) {
-      if (isNumberDivisible(number, i)) {
-        isPrime = false;
-      }
-    }
-    return isPrime;
-  }
-
-  print(isPrime(21));
-  print(isPrime(31));
+void challenge1(int number) {
+  print(isPrime(number));
+  // print(isPrime(31));
 }
 
 /*Challenge 2: Can you repeat that?
