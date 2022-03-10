@@ -4,7 +4,9 @@ void main() {
   //miniExercise3();
   //mapsMiniExercise1();
   //mapsMiniExercise2();
-  mapsMiniExercise3();
+  //mapsMiniExercise3();
+  //hodMiniExercise1();
+  hodMiniExercise2();
 }
 
 /// Lists mini-exercise 1
@@ -112,4 +114,24 @@ mapsMiniExercise3() {
     'city': 'faridabad',
   };
   map.forEach((key, value) => print('$key->$value'));
+}
+
+/// Higher order methods: Mini-exercise 1
+/*Given the following exam scores:
+final scores = [89, 77, 46, 93, 82, 67, 32, 88];
+1. Use sort to find the highest and lowest grades */
+hodMiniExercise1() {
+  final scores = [89, 77, 46, 93, 82, 67, 32, 88];
+  scores.sort();
+  print(scores.first);
+  print(scores.last);
+}
+
+/// Higher order methods: Mini-exercise 2
+/* 2. Use where to find all the B grades, that is, all the scores
+between 80 and 90*/
+hodMiniExercise2() {
+  final scores = [89, 77, 46, 93, 82, 67, 32, 88];
+  final bGrades = scores.where((score) => (score >= 80 && score < 90));
+  print(bGrades);
 }
